@@ -122,6 +122,7 @@ class LoginAPI(APIView):
                      "reportIdMLWeb": record2[12],
                      "reportIdMLMobile": record2[8],
                      "reportIdBIMobile": record2[14],
+                     "reportIdMarketing":record2[19],
 
                      "dataset_id": record2[4],
                      "datasetIdML": record2[9],
@@ -135,12 +136,13 @@ class LoginAPI(APIView):
                      "accesstokenML": MLTokenWeb,
                      "accesstokenMobileML": MLTokenMobile,
                      "accesstokenMobileBI": BITokenMobile,
-                     "marktingtoken": MarketingToken,
+                     "marketingtoken": MarketingToken['token'],
 
                      "embeded_url_web_BI": record2[6],
                      "embeded_url_Mobile_BI": record2[16],
                      "embeddedUrlMobileML": record2[10],
-                     "embeddedUrlWebML": record2[11]
+                     "embeddedUrlWebML": record2[11],
+                     "embeddedUrlmarket":record2[17]
 
                      
 
