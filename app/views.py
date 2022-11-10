@@ -2242,7 +2242,7 @@ def GenerateTokens(uniqueId, choice):
     if choice.lower() == 'bi':
         datasetIdMobile = record2[4]
         if record2[0] == '638FOC1YHDCQ7OB':  # Rutherford Mobile report Id
-            datasetIdMobile = "4d8ae096-5dda-4c03-9971-f621f1c733c7"
+            datasetIdMobile = "990fd67c-ee65-42a3-a070-f55b24ba5d3e"
         if record2[0] == 'QGX5R1C1UR5A03U':  # Beauford Mobile report Id
             datasetIdMobile = "1a7e3917-ff5e-48c8-8f2c-75f93bfb6e1a"
         accessTokenBI = generationAccesstoken(datasetId=record2[4], reportId=record2[3], groupId=record2[2])
