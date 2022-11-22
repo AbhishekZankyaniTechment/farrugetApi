@@ -2270,10 +2270,10 @@ def tokenUpdateInDB(uniqueId, value, choice):
     if choice.lower() == 'market':
         query1 = ''' UPDATE tenant_details.test_tbl_token
                     SET created_at=%s,
-                    marketing_token=%s,
+                    marketing_token=%s
                     WHERE county_unique_id= %s ;'''
         record_to_insert1 = (datetime.datetime.utcnow(),
-                             value[0], uniqueId
+                             value['token'], uniqueId
                              )
         cursor.execute(query1, record_to_insert1)
         conn.commit()
